@@ -77,13 +77,13 @@
     </applicationVisibilities>
     <classAccesses>
         <apexClass>ReservationController</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>WordsController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <custom>false</custom>
+    <custom>true</custom>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>

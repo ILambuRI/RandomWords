@@ -10,7 +10,7 @@
     <aura:registerEvent name="eventClickShowOrHideLesson" type="c:EventShowOrHideLesson" />
                         
     <!-- MARKUP ******************************************************************************************* -->
-    <div class="slds-align_absolute-center slds-p-bottom_small">
+    <div class="slds-align_absolute-center slds-p-vertical_small">
         <lightning:buttonGroup >
             <lightning:button label="Refresh Words"
                               name='refresh'

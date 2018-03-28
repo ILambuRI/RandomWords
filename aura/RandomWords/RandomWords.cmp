@@ -28,7 +28,7 @@
     <aura:handler name="eventClickShowOrHideLesson" event="c:EventShowOrHideLesson" action="{!c.handleClickShowOrHideLesson}" />
 
     <!-- MARKUP ******************************************************************************************* -->
-    <div class="slds-grid slds-wrap">
+    <div class="slds-grid slds-size_1-of-1 slds-wrap">
         <!-- Button to the top of page -->
         <div class="slds-is-fixed custom-button-top">
             <lightning:buttonIcon aura:id="btnToTheTop"
@@ -69,7 +69,7 @@
             <c:WordsProgress storeSelectedWords="{!v.storeSelectedWords}"
                             selectedWords="{!v.selectedWords}"
                             buttonStatus="{!v.buttonStatus}"
-                            paddingClass="slds-p-horizontal_large"
+                            paddingClass="slds-p-right_large"
             />
         </lightning:layoutItem>
 

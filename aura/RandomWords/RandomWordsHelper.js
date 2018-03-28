@@ -71,6 +71,8 @@
     },
 
     toggleStickyProgress : function(cmp, tumbler) {
+        console.log('SHOW or HIDE');
+        
         let progress = cmp.find('progress');
         $A.util.toggleClass(progress, 'slds-hide');
     }

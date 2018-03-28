@@ -56,4 +56,8 @@
         <name>Random_English_Words</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Reservation</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
