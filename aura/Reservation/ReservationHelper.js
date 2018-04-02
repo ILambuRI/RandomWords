@@ -39,7 +39,7 @@
         }
         
         cmp.set('v.currentPart', currentPart);
-        console.log(cmp.get('v.currentPart'));
+        //console.log(cmp.get('v.currentPart'));
     },
     
     getNamesOfTheParts : function(cmp, obj) {
@@ -47,6 +47,25 @@
 		partsNames = Object.keys(obj);
         cmp.set('v.partsNames', partsNames);
 
-        console.log(cmp.get('v.partsNames'));
+        //console.log(cmp.get('v.partsNames'));
+    },
+
+    getAllPartsOfTheDay : function(cmp) {
+        let callback = function(response) {
+            if ( "SUCCESS" === response.getState() ) {
+				cmp.set("v.partsOfTheDay", response.getReturnValue());
+                
+                this.getNamesOfTheParts(cmp, response.getReturnValue());
+                
+				//console.log(cmp.get("v.partsOfTheDay"));
+            }
+            else {
+                console.log( "Failed with state: " +
+                            response.getState() +
+                            " in ReservationController|doInit()" );
+            }
+        };
+        
+        this.sendRequest(cmp, "getPartsOfTheDay", false, callback);
     }
 })
